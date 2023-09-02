@@ -1,0 +1,86 @@
+.home__desktop-menu
+    display: none
+
+@media screen and (min-width:1024px)
+    .home__desktop-menu
+        display: block
+        width: 100%
+        height: 120px
+
+        position: absolute
+        left: 0
+        top: 0
+        z-index: 799
+
+    .home__desktop-pages
+        width: 100%
+        height: 100%
+
+        display: flex
+        flex-direction: row
+        justify-content: center
+        align-items: center
+        gap: 20px
+
+        font-size: 34px
+        text-shadow: 0 0 2px #000
+
+    .home__desktop-link.--logo
+        font-size: 60px
+
+        span
+            color: #bf0000
+
+    .home__desktop-link.--about
+        position: relative
+        padding-left: 10px
+        box-sizing: border-box
+        &::before
+            display: block
+            width: 50px
+            height: 2px
+
+            position: absolute
+            left: 0
+            top: 50%
+            transform: translate(-100%, -50%)
+
+            background-color: #fff
+
+            content: ''
+
+    .home__desktop-link.--contact
+        position: relative
+
+        padding-right: 10px
+        box-sizing: border-box
+
+        &::before
+            display: block
+            width: 50px
+            height: 2px
+
+            position: absolute
+            right: 0
+            top: 50%
+            transform: translate(100%, -50%)
+
+            background-color: #fff
+
+            content: ''
+
+    .home__desktop-link
+        transition: .3s
+        &:hover
+            transform: scale(1.1)
+
+    .home__desktop-media
+        position: absolute
+        right: 20px
+        top: 50%
+        transform: translateY(-50%)
+
+        font-size: 22px
+
+        &>a
+            padding: 0 8px

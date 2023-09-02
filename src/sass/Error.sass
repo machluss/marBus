@@ -1,0 +1,84 @@
+.error
+    padding-top: 70px
+    padding-bottom: 10px
+    box-sizing: border-box
+
+    font-size: 20px
+
+.error__gif
+    padding-top: 20px
+    padding-bottom: 50px
+    box-sizing: border-box
+
+    display: flex
+    justify-content: center
+    align-items: center
+
+    img
+        width: 80%
+
+.error__text
+    p
+        padding-bottom: 5px
+
+.error__home
+    position: relative
+
+    padding-bottom: 3px
+    box-sizing: border-box
+
+    .home
+        padding-right: 8px
+
+        font-size: 20px
+        vertical-align: -5%
+        
+    &::after
+        display: block
+        width: 115px
+        height: 1px
+
+        position: absolute
+        left: 25px
+        bottom: 0
+        // transform: translateX(-43%)
+
+        background-color: #bf0000
+
+        content: ''
+
+    &.--desktop
+        display: none
+
+@media screen and (min-width: 1024px)
+    .error
+        width: 100%
+        display: flex
+        flex-direction: row-reverse
+        justify-content: center
+
+    .error__gif
+        // flex-grow: 1
+        // flex-shrink: 0
+        width: 400px
+
+        justify-content: flex-end
+
+    .error__text
+        // flex-grow: 1
+        // flex-shrink: 0
+        width: 400px
+
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+
+    .error__home
+        &.--mobile
+            display: none
+            
+        &.--desktop
+            display: inline
+
+            padding-top: 30px

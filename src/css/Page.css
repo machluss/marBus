@@ -1,0 +1,9 @@
+.contentArea {
+  width: 100%;
+  min-height: 70vh;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  text-align: center;
+  overflow: hidden;
+}/*# sourceMappingURL=Page.css.map */

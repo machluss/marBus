@@ -1,0 +1,96 @@
+.home__desktop-menu {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .home__desktop-menu {
+    display: block;
+    width: 100%;
+    height: 120px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 799;
+  }
+  .home__desktop-pages {
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 20px;
+    font-size: 34px;
+    text-shadow: 0 0 2px #000;
+  }
+  .home__desktop-link.--logo {
+    font-size: 60px;
+  }
+  .home__desktop-link.--logo span {
+    color: #bf0000;
+  }
+  .home__desktop-link.--about {
+    position: relative;
+    padding-left: 10px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .home__desktop-link.--about::before {
+    display: block;
+    width: 50px;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    -webkit-transform: translate(-100%, -50%);
+            transform: translate(-100%, -50%);
+    background-color: #fff;
+    content: "";
+  }
+  .home__desktop-link.--contact {
+    position: relative;
+    padding-right: 10px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .home__desktop-link.--contact::before {
+    display: block;
+    width: 50px;
+    height: 2px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    -webkit-transform: translate(100%, -50%);
+            transform: translate(100%, -50%);
+    background-color: #fff;
+    content: "";
+  }
+  .home__desktop-link {
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  .home__desktop-link:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  .home__desktop-media {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    font-size: 22px;
+  }
+  .home__desktop-media > a {
+    padding: 0 8px;
+  }
+}/*# sourceMappingURL=Home.css.map */

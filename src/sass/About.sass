@@ -1,0 +1,90 @@
+.about
+    padding-top: 80px
+
+.about__main-title
+    padding-bottom: 20px
+
+    font-size: 22px
+
+.about__paragraph
+    // padding: 10px 20px 0
+    padding: 10px 0 0
+    box-sizing: border-box
+    
+
+.about__paragraph-title,
+.about__us-title
+    position: relative
+
+    margin-bottom: 10px
+    // padding-bottom: 10px
+    padding-bottom: 10px
+
+    font-size: 20px
+
+    &::after
+        display: block
+        width: 150px
+        height: 1px
+
+        position: absolute
+        left: 50%
+        bottom: 25%
+        transform: translateX(-50%)
+
+        background-color: #bf0000
+
+        content: ''
+
+.about__paragraph-content
+    padding: 0 20px
+
+    line-height: 1
+    text-align: center
+    text-align-last: center
+
+
+.about__paragraph-image
+    width: 100%
+
+    padding: 30px 0 20px
+    box-sizing: border-box
+
+    &>img
+        width: 100%
+
+.about__us-slider
+    width: 80%
+    height: 40vw
+
+    margin: 0 auto
+    border-top-left-radius: 5px
+    border-top-right-radius: 5px
+
+    display: flex
+    justify-content: center
+    align-items: center
+
+    overflow: hidden
+
+    &>img
+        width: 100%
+        
+        object-fit: cover
+        
+        
+.about__us-link
+    width: 80%
+    height: 10vw
+
+    margin: 0 auto
+    border-bottom-left-radius: 5px
+    border-bottom-right-radius: 5px
+
+    display: flex
+    justify-content: center
+    align-items: center
+
+    background-color: #bf0000
+
+    text-shadow: 0 0 5px #222

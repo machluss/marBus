@@ -1,0 +1,100 @@
+.error {
+  padding-top: 70px;
+  padding-bottom: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 20px;
+}
+
+.error__gif {
+  padding-top: 20px;
+  padding-bottom: 50px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.error__gif img {
+  width: 80%;
+}
+
+.error__text p {
+  padding-bottom: 5px;
+}
+
+.error__home {
+  position: relative;
+  padding-bottom: 3px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.error__home .home {
+  padding-right: 8px;
+  font-size: 20px;
+  vertical-align: -5%;
+}
+.error__home::after {
+  display: block;
+  width: 115px;
+  height: 1px;
+  position: absolute;
+  left: 25px;
+  bottom: 0;
+  background-color: #bf0000;
+  content: "";
+}
+.error__home.--desktop {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .error {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .error__gif {
+    width: 400px;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .error__text {
+    width: 400px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .error__home.--mobile {
+    display: none;
+  }
+  .error__home.--desktop {
+    display: inline;
+    padding-top: 30px;
+  }
+}/*# sourceMappingURL=Error.css.map */
